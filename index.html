@@ -2,16 +2,30 @@
 <html>
 <head>
     <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
     <style>
         table {
             border-collapse: collapse;
             width: 100%;
+            border: 2px solid;
+    
         }
 
         th, td {
-            border: 1px solid black;
+            border-bottom: 1px solid black;
             padding: 8px;
+            border: none;
+            border-right:2px solid;
+            
         }
+        th{
+            border-bottom:2px solid ;
+        }
+
+        /* td{
+            border:none;
+        } */
 
         th {
             background-color: #f2f2f2;
@@ -31,28 +45,32 @@
 <body>
     <h1>Student Management System</h1>
 
+    <form id="studentForm">
+        <h3>Add/Edit Student</h3>
+        <input type="hidden" id="studentId">
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" id="name" placeholder="Name" >
+        <!-- <label for="age">Age:</label> -->
+        <input type="number" id="age" placeholder="Age" >
+        <!-- <label for="grade">Grade:</label> -->
+        <input type="text" id="grade" placeholder="Grade" >
+        <!-- <label for="degree">Degree:</label> -->
+        <input type="text" id="degree" placeholder="Degree" >
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" placeholder="Email" >
+        <div class="btns">
+
+            <button type="submit" id="submitBtn">Add Student</button>
+            <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+        </div>
+    </form>
+
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
     </div>
 
-    <form id="studentForm">
-        <h2>Add/Edit Student</h2>
-        <input type="hidden" id="studentId">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
-        <label for="age">Age:</label>
-        <input type="number" id="age" required>
-        <label for="grade">Grade:</label>
-        <input type="text" id="grade" required>
-        <label for="degree">Degree:</label>
-        <input type="text" id="degree" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-        <button type="submit" id="submitBtn">Add Student</button>
-        <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
-    </form>
-
     <table id="studentTable">
+        <!-- <caption class=""caption>student table</caption> -->
         <thead>
             <tr>
                 <th>ID</th>
